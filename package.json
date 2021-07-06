@@ -1,0 +1,47 @@
+{
+  "name": "honor_assignment",
+  "version": "1.0.0",
+  "description": "This is a website for Covid vaccine seat availability checker",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sniper199999/Covid-Vaccine-Availability-Checker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sniper199999/Covid-Vaccine-Availability-Checker/issues"
+  },
+  "homepage": "https://github.com/Sniper199999/Covid-Vaccine-Availability-Checker#readme",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "lite-server": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.5.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
