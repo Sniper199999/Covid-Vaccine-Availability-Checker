@@ -1,12 +1,9 @@
-.footer {
-  background-color: #6ab4fd;
-  margin: 0px auto;
-  padding: 20px 0px;
-  color: white; }
-
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0; }
+
+.navbar-dark {
+  background-color: #2f54ccee; }
 
 .jumbotron {
   background-color: #6ab4fd;
@@ -60,9 +57,6 @@ form .spacing {
   form .spacing > div {
     padding: 0px; }
 
-.navbar-dark {
-  background-color: #2f54ccee; }
-
 .personalities img {
   border-radius: 50%;
   transition: 0.2s; }
@@ -79,7 +73,8 @@ form .spacing {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height: 0; }
+  height: 0;
+  border-radius: 10px; }
 
 .map-container iframe {
   left: 0;
@@ -87,3 +82,9 @@ form .spacing {
   height: 100%;
   width: 100%;
   position: absolute; }
+
+.footer {
+  background-color: #6ab4fd;
+  margin: 0px auto;
+  padding: 20px 0px;
+  color: white; }
