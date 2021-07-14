@@ -23,8 +23,7 @@ body {
 
 .container > .row-content > div:last-child {
   margin: 0px;
-  padding: 15px;
-  border-bottom: 1px solid #ced4da; }
+  padding: 15px; }
 
 .container > .row-content > div:not(:last-child) {
   margin: 0px;

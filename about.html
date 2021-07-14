@@ -21,31 +21,38 @@
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="./index.html" class="navbar-brand mr-auto"><img src="img/logo.png" height="30" width="41" alt=""></a>
+            <a href="#" class="navbar-brand mr-auto mr-sm-3 pt-0 pb-0"><img src="img/clipart2250767.png" height="40" width="40" alt=""></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item active mr-3"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="jumbotron">
         <div class="container">
+            <div class="row col-12 p-0 mb-2">
+                <h2>About Project</h2>
+            </div>
             <div class="row row-header">
-                <div class="col-12 col-sm-8 jt">
+                <div class="col-12 jt">
                     <h2>Automatic Vaccine Availability Checker</h1>
-                    <p>It is a free-to-use browser-based tool that searches, filters and alerts you about an open slot while you focus on something else. To know more about it press the "Know More" Button below!</p>
-                </div>
-                <div class="col-12 col-sm-3 align-self-center">
-                    <img src="img/clipart2250767.png" alt="Ristorante con Fusion" class="img-fluid">
+                    <p>Indian Government has recently made a <a href="https://apisetu.gov.in/public/marketplace/api/cowin">Co-Win Public API</a> . This API can do 
+                        Authentication calls, get Metadata, get Appointments Availability, and can 
+                        download Vaccination Certificate.</p>
+                    <p>We used this API in our project to make an Automatic Seat availability
+                        checker for Covid vaccination, which keeps running in background 
+                        checking for seats, while user can go on to do his work without wasting his 
+                        time to check for availability. Once the seats are available, it will notify the 
+                        user of seats available, so that user can go and book his appointment.</p>
                 </div>
             </div>
+            
         </div>
     </header>
 
@@ -86,6 +93,7 @@
             </div>
             
         </div>
+        <hr>
         <div class="row row-content justify-content-center mt-3">
             <div class="row col-12 justify-content-center">
                 <h2 class="col-auto mb-0 mt-0">Our Team</h2>
