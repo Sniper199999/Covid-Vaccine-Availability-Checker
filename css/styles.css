@@ -13,7 +13,9 @@ body {
   color: white; }
   .jumbotron .jt {
     border-radius: 5px;
-    box-shadow: 0px 0px 24px 6px #1C92FB; }
+    box-shadow: 0px 0px 24px 6px #1C92FB;
+    background: white;
+    color: #023D71; }
 
 .btn-social-icon {
   border-radius: 60px;
@@ -72,3 +74,16 @@ form .spacing {
 
 .personalities p {
   color: #646464; }
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
