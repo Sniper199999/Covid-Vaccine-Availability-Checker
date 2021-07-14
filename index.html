@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- endbuild -->
+
+    <title>Vaccine Availability Checker</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto mr-sm-3 pt-0 pb-0"><img src="img/clipart2250767.png" height="40" width="40" alt=""></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mr-3"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="./about.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item mr-3"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-8 jt">
+                    <h2>Automatic Vaccine Availability Checker</h1>
+                    <p>It is a free-to-use browser-based tool that searches, filters and alerts you about an open slot while you focus on something else. To know more about it press the "Know More" Button below!</p>
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <img src="img/clipart2250767.png" alt="Ristorante con Fusion" class="img-fluid">
+                </div>
+                <div class="col-12 mt-2 col-sm-auto text-center align-self-center">
+                    <button type="button" class="btn btn-block nav-link btn-warning" onclick="window.location.href='./about.html'">Know More</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content">
+            <div class="row col-lg-6 col-sm-12">
+                <div class="col-12">
+                    <h3>Basic Settings</h3>
+                </div>
+                <div class="col-12">
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-12 col-form-label">Select A State</label>
+                            <div class="col-md-10">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Bihar</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-12 col-form-label">Select A District</label>
+                            <div class="col-md-10">
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Andhra Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Bihar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-12 col-form-label">Insert Pincode</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-12 col-form-label">Date To Check Slots</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row col-lg-6 col-sm-12 align-content-start">
+                <div class="col-12">
+                    <h3>Advanced Settings</h3>
+                </div>
+                <div class="col-12">
+                    <form action="">
+                        <div class="form-group row form-check-inline col-md-10 grp-outline spacing">
+                            <legend class="col-form-label col-auto"><strong>Select Dose</strong></legend>
+                            <div class="col-auto">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Dose 1</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Dose 2</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="form-group row col-md-10 grp-outline">
+                            <div class="form-group row form-check-inline col-md-12">
+                                <div class="col-2 mr-2"><strong>Age</strong></div>
+                                <div class="col-auto">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">18+</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">45+</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row form-check-inline col-md-12">
+                                <div class="col-2 mr-2"><strong>Type</strong></div>
+                                <div class="col-auto">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox3">Covaxin</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox4">Covishield</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row form-check-inline col-md-12">
+                                <div class="col-2 mr-2"><strong>Cost</strong></div>
+                                <div class="col-auto">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox5">Free</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox6">Paid</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row form-check-inline col-12">
+                            <div class="col-sm-10">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1">Center Found Sound</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row col-12 justify-content-center">
+                <button type="submit" class="btn btn-success col-8" id="startMonitoring">
+                    Start Monitoring
+                </button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-9">
+                <h2>Available Centers</h2>
+                <div class="table-responsive">
+                 <table class="table">
+                     <thead class="thead-light">
+                         <tr>
+                             <th>Center Name</th>
+                             <th>Pin Code</th>
+                             <th>Google Map</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr>
+                             <td>Center Name, with full address</td>
+                             <td>100 100</td>
+                             <td><button type="button" class="btn btn-info btn-sm m-0" onclick="window.open('https://www.google.co.in/maps/','_blank')">Direction</button></td>
+                         </tr>
+                         <tr>
+                             <td>Center Name, with full address</td>
+                             <td>001 001</td>
+                             <td><button type="button" class="btn btn-info btn-sm m-0" onclick="window.open('https://www.google.co.in/maps/','_blank')">Direction</button></td>
+                         </tr>
+                         <tr>
+                             <td>Center Name, with full address</td>
+                             <td>101 101</td>
+                             <td><button type="button" class="btn btn-info btn-sm m-0" onclick="window.open('https://www.google.co.in/maps/','_blank')">Direction</button></td>
+                         </tr>
+                         <tr>
+                             <td>Center Name, with full address</td>
+                             <td>101 001</td>
+                             <td> <button type="button" class="btn btn-info btn-sm m-0" onclick="window.open('https://www.google.co.in/maps/','_blank')">Direction</button></td>
+                         </tr>
+                     </tbody>
+                 </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-around text-center">
+                <div class="col-1">
+                    <a href=""><img src="./img/clipart2250767.png" height="40" alt=""></a>
+                </div>
+                <div class="row justify-content-left col-lg-5 col-10">
+                    <a class=" col-auto" href="">Home</a>
+                    <a class=" col-auto" href="">About</a>
+                    <a class=" col-auto" href="">Contact Us</a>
+                </div>
+                <div class="row col-lg-5 col-12 justify-content-center">
+                    <div>
+                        <h4>Socials:</h1>
+                    </div>
+                    <div class="col-auto"> 
+                        <a class="btn btn-social-icon btn-google mb-1" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook mb-1" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin mb-1" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter mb-1" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google mb-1" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon mb-1" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">             
+                <div class="col-auto">
+                    <p class="mb-0">© Copyright 2021 Cowin Vaccine Availability Checker Bot</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

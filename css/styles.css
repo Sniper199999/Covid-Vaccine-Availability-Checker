@@ -1,0 +1,75 @@
+.footer {
+  background-color: #6ab4fd;
+  margin: 0px auto;
+  padding: 20px 0px;
+  color: white; }
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
+
+.jumbotron {
+  background-color: #6ab4fd;
+  color: white; }
+  .jumbotron .jt {
+    border-radius: 5px;
+    box-shadow: 0px 0px 24px 6px #1C92FB; }
+
+.btn-social-icon {
+  border-radius: 60px;
+  border: 2px solid white; }
+  .btn-social-icon i {
+    scale: 0.9; }
+
+.container > .row-content > div:last-child {
+  margin: 0px;
+  padding: 15px;
+  border-bottom: 1px solid #ced4da; }
+
+.container > .row-content > div:not(:last-child) {
+  margin: 0px;
+  padding: 0px; }
+
+@media (max-width: 991px) {
+  .container > .row-content > div:first-child {
+    padding-bottom: 15px; } }
+
+.container > .row:last-child > div:first-child h2 {
+  margin: 20px 0px 15px 0px; }
+
+form .grp-outline {
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  margin: 0px;
+  margin-bottom: 15px;
+  padding: 0px 15px 0px 15px; }
+  form .grp-outline legend {
+    padding: 0px 15px 0px 0px; }
+  form .grp-outline > div:not(:last-child) {
+    border-bottom: 1px solid #ced4da; }
+  form .grp-outline > div {
+    margin: 0px;
+    padding: 7px 0px 7px 0px; }
+    form .grp-outline > div > div {
+      padding-left: 0px; }
+
+form .spacing {
+  padding: 7px 15px 7px 15px;
+  margin: 7px 0px 15px 0px; }
+  form .spacing > div {
+    padding: 0px; }
+
+.navbar-dark {
+  background-color: #2f54ccee; }
+
+.personalities img {
+  border-radius: 50%;
+  transition: 0.2s; }
+
+.personalities img:hover {
+  transition: 0.2s;
+  border-radius: 30%;
+  cursor: pointer; }
+
+.personalities p {
+  color: #646464; }
